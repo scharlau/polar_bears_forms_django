@@ -9,11 +9,18 @@ The goal of 'deliberate practice' is to think about how you'd solve this challen
 
 Under 'deliberate practice' we offer up the challenge, then think about options for developing a solution, and code for 12 minutes. After that we pause to discuss how people are approaching the problem, and what they're trying to do. This should be repeated three times and then wrapped up with time for people to express what they found most useful during the session. This should take an hour.
 
-
-
 ## Doing the work
 Now that the basics are working, we can see what else is possible in this application.
 
 Round one should have you adding in a basic form to edit a 'bear'. 
 Round two should be adding forms to edit 'sightings'.
-Round three should be exploring what else might be possible, even if only to total up some values of the bear attributes to display on a page.
+Round three should be exploring what else might be possible, even if only to experiment with other options of what display, and make editable on a page.
+
+## Round one: Adding CRUD forms for a bear
+With databases we normally expect CRUD operations that allow us to create, read, update, and delete records. We can currently only read records.
+
+## Round two: Do the same for bear sightings
+You should be able to replicated what you did for the bear model with the sighting model. You will need to pay attention with the relationship between the bear and its sightings. You might want to make some values 'read-only' and not editable so that users can't accidently break things.
+
+## Rounds three: What else can we do?
+Play around and see what else is feasible with what you know how to do, or would like to have happen. This is still a simple, basic application that has many little things you could fix. For example, there is no navigation, and it would be nice to have a better styling, and so many other things.

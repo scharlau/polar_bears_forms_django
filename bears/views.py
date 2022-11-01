@@ -30,8 +30,6 @@ def bear_edit(request, id):
 
 def bear_delete(request, id):
     bear = get_object_or_404(Bear, id=id)
-    deleted = request.session.get('deleted', 'empty')
-    request.session['deleted'] = bear.id
     bear.delete()
     return redirect('bear_list' )
 

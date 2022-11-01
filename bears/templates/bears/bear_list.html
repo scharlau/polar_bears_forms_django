@@ -5,7 +5,7 @@
 <body>
  
     <h1>Polar bears Tagged for Tracking</h1>
-    
+    <p><a href="{% url 'bear_new' %}">Add a new bear</a></p>
     {% for bear in bears %}
     <p><b> <a href="{% url 'bear_detail' id=bear.id %}">{{bear.bearID }}</a></b>
       This is a {{ bear.age_class }} aged bear 

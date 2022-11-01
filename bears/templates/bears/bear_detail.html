@@ -14,6 +14,8 @@
          {{ bear.age_class}} |
         {{bear.ear_applied}}	
      </p>
+     <p><a href="{% url 'bear_edit' id=bear.id %}">Edit this bear</a> 
+      <a href="{% url 'bear_delete' id=bear.id %}">Delete this bear</a></p>
      <p>Sightings for this bear via Radio Device</p>
      {% for sighting in sightings %}
     <p>Bear: 

@@ -1,6 +1,6 @@
 from django.utils import timezone
 from django.shortcuts import redirect, render, get_object_or_404
-from .models import Bear
+from .models import Bear, Sighting
 from .forms import BearForm
 
 def bear_new(request):
@@ -45,4 +45,5 @@ def females(request):
 
 def bear_detail(request, id):
     bear = get_object_or_404(Bear, id=id)
-    return render(request, 'bears/bear_detail.html', {'bear' : bear})
+    sightings = Sighting.objects.filter(bear_id=id)
+    return render(request, 'bears/bear_detail.html', {'bear' : bear, 'sightings' : sightings})
